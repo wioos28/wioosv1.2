@@ -1,0 +1,126 @@
+
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+
+       local Window = MakeWindow({
+         Hub = {
+         Title = "wioos v1.2",
+         Animation = "wioos v1.2"
+         },
+        Key = {
+        KeySystem = false,
+        Title = "Key System",
+        Description = "",
+        KeyLink = "",
+        Keys = {"2011"},
+        Notifi = {
+        Notifications = true,
+        CorrectKey = "Running the Script...",
+       Incorrectkey = "The key is incorrect",
+       CopyKeyLink = "Copied to Clipboard"
+      }
+    }
+  })
+
+       MinimizeButton({
+       Image = "http://www.roblox.com/asset/?id=129005337158338",
+       Size = {60, 60},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
+      
+------ Tab
+     local Tab1o = MakeTab({Name = "MAIN"})
+     local Tab2o = MakeTab({Name = "setting"})
+     local Tab3o = MakeTab({Name = "clin"})
+     
+     
+-------TOGGLE 
+
+     Toggle = AddToggle(Tab1o, {
+      Name = "a",
+      Default = false,
+      Callback = function()
+     end
+    })
+    
+------- BUTTON
+    
+    AddButton(Tab2o, {
+     Name = "FIX LAG",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })
+     AddButton(Tab3o, {
+     Name = "Arceus X",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+  end
+  })  
+     AddButton(Tab3o, {
+     Name = "Keyboard",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  end
+  })  
+     AddButton(Tab3o, {
+     Name = "Synapse X",
+    Callback = function()
+	  loadstring(game:HttpGet("https://pastebin.com/raw/QmqSgQ3K"))()
+  end
+  })  
+     AddButton(Tab3o, {
+     Name = "Krnl",
+    Callback = function()
+	  loadstring(game:HttpGet("https://pastebin.com/raw/M3HjLPU7"))()
+  end
+  })  
+     AddButton(Tab1o, {
+     Name = "redz",
+    Callback = function()
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+  end
+  })   
+     AddButton(Tab1o, {
+     Name = "w-arue",
+    Callback = function()
+	  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+  end
+  })
+     AddButton(Tab2o, {
+     Name = "RTX",
+    Callback = function()
+	  loadstring(game:HttpGet("https://pastebin.com/raw/vmjZ4UY8"))()
+  end
+  })
+     AddButton(Tab1o, {
+     Name = "zis gaming",
+    Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb7"))()
+  end
+  })
+     AddButton(Tab1o, {
+     Name = "farm nhanh",
+    Callback = function()
+	  loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
+  end
+  })
+----- Dropdown 
+
+  Dropdown = AddDropdown(Tab1o, {
+     Name = "a",
+     Options = {"Test 1", "Test 2", "Test 3", "Test 4"},
+     Default = "Melee",
+     Callback = function()
+     end
+   })
+
+----- Section 
+   
+   Section = AddSection(Tab1o, {"a"})          
+
+----- Paragraph 
+                    
+   Paragraph = AddParagraph(Farm, {"a", ""})
