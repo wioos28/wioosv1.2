@@ -71,8 +71,10 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
      Name = "trau roblox",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs/heads/main/TrauXt"))()
+
   end
   }) 
+  
   AddButton(Tab3o, {
      Name = "fix lag",
     Callback = function()
@@ -89,11 +91,18 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
      Name = "min gaming auto hop",
     Callback = function()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopFull"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopBoss"))()
   end
   })
    AddButton(Tab5o, {
-     Name = "teddy auto hop seve",
+     Name = " auto hop sever  fullmoon",
+    Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/AKGAMING-HOP"))()
+  end
+  })
+  AddButton(Tab5o, {
+     Name = "teddy hub auto hop",
     Callback = function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletgojo/Haidepzai/refs/heads/main/Teddy-Premium"))()    
@@ -115,7 +124,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/main/
   end
   })   
      AddButton(Tab2o, {
-     Name = "rubu hub",
+     Name = "ruru hub",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RuBuBFVn"))()
   end
@@ -138,7 +147,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs
      AddButton(Tab2o, {
      Name = "redz",
     Callback = function()
-          loadstring(game:HttpGet(https://raw.githubusercontent.com/LuaCrack/RubuRoblox/refs/heads/main/RubuBF"))()
+          local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
   end
   })
   AddButton(Tab2o, {
@@ -262,7 +276,7 @@ s.Spread = 0.146
 	    loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()
   end
   })
-     AddButton(Tab4o, {
+     AddButton(Tab1o, {
      Name = "farm nhanh",
     Callback = function()
 	  loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
